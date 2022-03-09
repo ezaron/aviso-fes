@@ -67,7 +67,7 @@ int main(void) {
     printf("fes error : %s\n", fes_error(u_tide));
     goto error;
   }
-  if (fes_new(&u_tide, FES_TIDE, FES_IO, INI_V)) {
+  if (fes_new(&v_tide, FES_TIDE, FES_IO, INI_V)) {
     printf("fes error : %s\n", fes_error(v_tide));
     goto error;
   }
