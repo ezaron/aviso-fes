@@ -19,3 +19,7 @@ target_compile_definitions(fes_slev
         INI="${CMAKE_SOURCE_DIR}/test/fes.ini"
         FES_DATA="${CMAKE_SOURCE_DIR}/test/data"
 )
+add_executable(fes_slev_edz fes_slev_edz.c)
+target_link_libraries(fes_slev_edz fes ${NETCDF_LIBRARIES} ${MATH_LIBRARY})
+add_executable(fes_uv_edz fes_uv_edz.c)
+target_link_libraries(fes_uv_edz fes ${NETCDF_LIBRARIES} ${MATH_LIBRARY})
